@@ -1,0 +1,178 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #2b2b2b;
+  background-color: #e6e6e6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CONTAINER */
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* PRODUCT-CARD */
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.product-card-image {
+  margin-right: 2rem;
+}
+
+.product-card-fruit-image {
+  width: 1000px;
+}
+
+.product-card-title {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.delete {
+  color: #b31515;
+  margin-right: 10px;
+}
+
+.product-card-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-card-buy-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  background-color: #b31515;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 0;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.product-card-buy-button:hover {
+  background-color: #8a1111;
+}
+
+.product-card-buy-button:active {
+  opacity: 0.8;
+}
+
+/* MODAL */
+.product-card-buy-container {
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  width: 450px;
+  opacity: 0;
+  pointer-events: none;
+  top: -50%;
+  transition: all 1s ease;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+#close-btn {
+  background-color: transparent;
+  position: absolute;
+  font-size: 30px;
+  border: 0;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+.contact-form {
+  padding-top: 20px;
+}
+
+.contact-input {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #ccc;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.date-label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-input {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.cancel-Button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #27b827;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.product-card-buy-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}

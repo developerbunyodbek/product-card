@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="container">
+        <div class="product-card">
+          <div class="product-card-image">
+            <img
+              class="product-card-fruit-image"
+              src="./images/apple-image.jpg"
+              alt="Apple Image"
+            />
+          </div>
+          <div class="product-card-texts">
+            <h1 class="product-card-title">Apple</h1>
+            <p class="product-card-money">
+              <del class="delete">$14.99</del>$9.99
+            </p>
+            <p class="product-card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              molestias ipsa placeat quasi, velit inventore necessitatibus
+              voluptatum eligendi quae est esse. Natus, ducimus velit tempora
+              officia quae deleniti iste libero.
+            </p>
+            <button class="product-card-buy-button" type="button">Buy</button>
+          </div>
+        </div>
+        <div class="product-card-buy-container">
+          <button id="close-btn" class="btn">&times;</button>
+          <form class="contact-form">
+            <label for="card-name">
+              <input
+                class="contact-input"
+                type="text"
+                id="card-name"
+                name="card-name"
+                placeholder="Your Cardholder's Name"
+              />
+            </label>
+            <label for="card-number">
+              <input
+                class="contact-input"
+                type="number"
+                name="card-number"
+                id="card-number"
+                placeholder="Your Card Number"
+              />
+            </label>
+            <div class="date">
+              <label class="date-label" for="exp-date">
+                Exp.Date
+                <input
+                  class="exp-input contact-input"
+                  type="number"
+                  name="exp-date"
+                  id="exp-date"
+                  placeholder="MM / YY"
+                />
+              </label>
+              <label class="date-label" for="cvv-date">
+                CVV / CVC
+                <input
+                  class="exp-input contact-input"
+                  type="number"
+                  name="cvv-date"
+                  id="cvv-date"
+                />
+              </label>
+            </div>
+            <button class="cancel-Button btn" type="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
